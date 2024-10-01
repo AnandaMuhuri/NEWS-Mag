@@ -44,6 +44,21 @@
 
 Contributions are welcome! Please submit an issue or pull request.
 
+## 📌 Known Issues
+
+### CORS Error with News API
+
+While using the [News API](https://newsapi.org/), you may encounter the following error:
+
+{
+    "status": "error",
+    "code": "corsNotAllowed",
+    "message": "Requests from the browser are not allowed on the Developer plan, except from localhost."
+}
+
+This is due to the API's CORS policy. To resolve this, either run the app locally or proxy requests through a backend server. Alternatively, consider upgrading to a higher API plan.
+
+
 ## 🌟 Acknowledgements
 
    - News API for providing the news data.
